@@ -118,60 +118,6 @@ def check_date(date_str) :
 ###############################################################################
 
 
-### date_before_after
-def date_before_after(date1, date2) :
-    '''
-    This function receives two dates and times in the form "YYYY-MM-DDThh:mm:ss"
-    and checks if the first one is before or after the second one.
-    The two dates are assumed to be already correct and valid (i.e., they have
-    already passed the "check_date" function. 
-    The function uses the 'juliandate' library.                                                   
-                                                               
-    Parameters
-    ----------
-    date1 : (string) a complete first date and time (in UTC) in the form
-        "YYYY-MM-DDThh:mm:ss".
-    date2 : (string) a complete second date and time (in UTC) in the form
-        "YYYY-MM-DDThh:mm:ss".
-
-    Returns
-    -------
-    It returns 0 if the first date is before, 1 if it is after the second.
-    
-    '''
-    
-    # Read the numbers in the first date
-    year1 = int(date1[0:4])
-    month1 = int(date1[5:7])
-    day1 = int(date1[8:10])
-    hour1 = int(date1[11:13])
-    minute1 = int(date1[14:16])
-    second1 = int(date1[17:19])
-    
-    # Convert the first date/time to julian day
-    jd1 = jd.from_gregorian(year1, month1, day1, hour1, minute1, second1)
-    
-    # Read the numbers in the second date
-    year2 = int(date2[0:4])
-    month2 = int(date2[5:7])
-    day2 = int(date2[8:10])
-    hour2 = int(date2[11:13])
-    minute2 = int(date2[14:16])
-    second2 = int(date2[17:19])
-    
-    # Convert the second date/time to julian day
-    jd2 = jd.from_gregorian(year2, month2, day2, hour2, minute2, second2)
-    
-    # Check their chronological order
-    if jd2 >= jd1 :
-        return(0) # date2 AFTER date1
-    else :
-        return(1) # date1 AFTER date2
-
-
-###############################################################################
-
-
 ### circumf_3d_vec
 def circumf_3d_vec(npoints, body_pos, r_body) :
     '''
