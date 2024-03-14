@@ -13,8 +13,6 @@
 # Here is a tweet-like description of each function:
 #     - check_date : it verifies if all the numbers of a date and time are
 #         correct and the date exists.
-#     - date_before_after : it reads two dates/times and verifies if the first 
-#         is before or after the second one.
 #     - circumf_3d_vec : it computes the coordinates of a circumference in 3D
 #         space with the center perpendicular to a given vector.
 #     - convert3to2deg : it reads a position vector in 3D space and converts it
@@ -32,9 +30,6 @@
 
 # import calendar to check leap years
 from calendar import isleap
-
-# import julian date
-import juliandate as jd
 
 # import numpy and linalg
 import numpy as np
