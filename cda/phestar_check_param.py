@@ -140,8 +140,9 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
                         else :
                                                             
                             # Check if the end date is after the start date
-                            aft = date_before_after(timest, timend)
-                            if aft == 1 : 
+                            t1 = spy.str2et(timest)
+                            t2 = spy.str2et(timend)
+                            if t1 > t2 : 
                                 sg.PopupError("The start time can't be after the end time!")
                                 return(1)
                             else :
