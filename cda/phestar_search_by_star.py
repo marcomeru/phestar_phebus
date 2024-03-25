@@ -26,17 +26,22 @@
 #### IMPORT LIBRARIES #########################################################
 
 # import SPICE
-import spiceypy as spy
+if "spy" not in dir() :
+    import spiceypy as spy
  
 # numpy
-import numpy as np
-from numpy import linalg as lal
+if "np" not in dir() :
+    import numpy as np
+if "lal" not in dir() :
+    from numpy import linalg as lal
 
 # import pandas
-import pandas as pd
+if "pd" not in dir() :
+    import pandas as pd
  
 # import simpleGUI
-import PySimpleGUI as sg
+if "sg" not in dir() :
+    import PySimpleGUI as sg
 
 # Manage directories
 import sys
