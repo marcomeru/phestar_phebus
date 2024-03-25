@@ -32,8 +32,10 @@
 from calendar import isleap
 
 # import numpy and linalg
-import numpy as np
-from numpy import linalg as lal
+if "np" not in dir() :
+    import numpy as np
+if "lal" not in dir() :
+    from numpy import linalg as lal
 
 ###############################################################################
 
