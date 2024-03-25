@@ -24,10 +24,12 @@
 #### IMPORT LIBRARIES #########################################################
 
 # Import SPICE
-import spiceypy as spy
+if "spy" not in dir() :
+    import spiceypy as spy
 
 # Import pysimpleGUI
-import PySimpleGUI as sg
+if "sg" not in dir() :
+    import PySimpleGUI as sg
 
 # Manage directories
 import sys
@@ -39,7 +41,7 @@ parent_dir = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(parent_dir)
 
 # Import some useful functions
-from utilities.phestar_functions import check_date, date_before_after
+from utilities.phestar_functions import check_date
 from utilities.phestar_functions_spice import pos_body_rf
 
 #### START FUNCTION ###########################################################
