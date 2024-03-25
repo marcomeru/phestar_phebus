@@ -84,13 +84,13 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
         
         # Check if the kernel list file is valid
         try :
-            try :
-                tim = spy.str2et("2025-01-01T20:00:00")
+            tim = spy.str2et("2025-01-01T20:00:00")
             except :
-                spy.furnsh(kernel)
-        except :
-            sg.PopupError("The kernel list file is invalid. Please insert a valid file (e.g., \"bc_plan.tm\")!")
-            return(1)
+                try :
+                    spy.furnsh(kernel)
+                except :
+                    sg.PopupError("The kernel list file is invalid. Please insert a valid file (e.g., \"bc_plan.tm\")!")
+                    return(1)
         else :     
             
             # Check the start date
