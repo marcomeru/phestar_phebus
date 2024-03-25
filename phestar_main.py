@@ -25,13 +25,16 @@
 #### IMPORT LIBRARIES #########################################################
 
 # import numpy
-import numpy as np
+if "np" not in dir() :
+    import numpy as np
 
 # import pandas
-import pandas as pd
+if "pd" not in dir() :
+    import pandas as pd
 
 # import pysimplegui
-import PySimpleGUI as sg
+if "sg" not in dir() :
+    import PySimpleGUI as sg
 
 # import the function to search stars
 from cda.phestar_search_by_star import phestar_search_by_star
