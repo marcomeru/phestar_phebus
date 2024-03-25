@@ -25,10 +25,12 @@
 #### IMPORT LIBRARIES #########################################################
 
 # import numpy
-import numpy as np
+if "np" not in dir() :
+    import numpy as np
 
 # import Spice
-import spiceypy as spy
+if "spy" not in dir() : 
+    import spiceypy as spy
 
 ###############################################################################
 
