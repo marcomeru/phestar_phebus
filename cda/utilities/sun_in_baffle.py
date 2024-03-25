@@ -20,11 +20,14 @@
 #### IMPORT LIBRARIES #########################################################
 
 # import spiceypy
-import spiceypy as spy
+if "spy" not in dir() : 
+    import spiceypy as spy
 
 # import numpy and linalg
-import numpy as np
-from numpy import linalg as lal
+if "np" not in dir() :
+    import numpy as np
+if "lal" not in dir() :
+    from numpy import linalg as lal
 
 # Manage directories
 import sys
