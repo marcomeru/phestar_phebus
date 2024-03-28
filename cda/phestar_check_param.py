@@ -86,7 +86,7 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
         
         # Check if the kernel list file is valid
         try :
-            tim = spy.str2et("2025-01-01T20:00:00")
+            _ = spy.str2et("2025-01-01T20:00:00")
         except :
             try :
                 spy.furnsh(kernel)
@@ -112,7 +112,7 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
                 try :
                     #spy.furnsh(kernel)
                     tim2 = spy.str2et(timest)
-                    stdt_check = pos_body_rf("-121", "1", "ECLIPJ2000", tim2)
+                    _ = pos_body_rf("-121", "1", "ECLIPJ2000", tim2)
                 except :
                     sg.PopupError("There are no data on BepiColombo on the inserted start date. It may be too far in the past or in the future. Please insert a closer date!")
                     return(1)
@@ -135,7 +135,7 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
                         try :
                             #spy.furnsh(kernel)
                             tim3 = spy.str2et(timend)
-                            etdt_check = pos_body_rf("-121", "1", "ECLIPJ2000", tim3)
+                            _ = pos_body_rf("-121", "1", "ECLIPJ2000", tim3)
                         except :
                             sg.PopupError("There are no data on BepiColombo on the inserted end date. It may be too far in the past or in the future. Please insert a closer date!")
                             return(1)
@@ -185,7 +185,7 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
         
         # Check if the kernel list file is valid
         try :
-            tim = spy.str2et("2025-01-01T20:00:00")
+            _ = spy.str2et("2025-01-01T20:00:00")
         except :
             try :
                 spy.furnsh(kernel)
@@ -210,7 +210,7 @@ def phestar_check_param(whatto, kernel, timest, timend, timestep, scanp, maxang)
                 try :
                     #spy.furnsh(kernel)
                     tim5 = spy.str2et(timest)
-                    etdt_check = pos_body_rf("-121", "1", "ECLIPJ2000", tim5)
+                    _ = pos_body_rf("-121", "1", "ECLIPJ2000", tim5)
                 except :
                     sg.PopupError("There are no data on BepiColombo on the inserted date. It may be too far in the past or in the future. Please insert a closer date!")
                     return(1)
