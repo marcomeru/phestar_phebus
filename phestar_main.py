@@ -114,7 +114,7 @@ if which_com == 1 :
         [sg.Text("Please be sure to select at least one star from the list on the left, and to fill in all the fields on the right correctly before launching the search! \n"+
                  "N.B.! The time step must be a positive integer. However, if the start and end dates/times are equal, the program will (logically) ignore the time step.")],
         [sg.Text("Until the separation of MTM from MPO (December 2025) the field of view of PHEBUS is obstructed for scanner positions from \n"+
-                 "2100 to 2850. In addition, PHEBUS can observe when it's out of the parking position, namely for scanner positions from 115 to 3980.\n"+
+                 "2100 to 2850. In addition, PHEBUS can observe when it's out of the parking position, namely for scanner positions from 100 to 3990.\n"+
                  "The baffle of PHEBUS can only be illuminated sideways by the Sun. Direct sunlight must not enter the aperture of the baffle, \n"+
                  "which means that the observation can be done if the Sun is occulted or it's at least 90° away from the line of sight of PHEBUS.")],
         [sg.Column(layout_lcol), sg.VSeparator(), sg.Column(layout_rcol)],
@@ -314,7 +314,7 @@ if which_com == 2 :
                  "centered on MPO. For the Sun and planets (except for Mercury), the sizes of their dots in the plot do not account for their apparent \n"+
                  "angular size.")],
         [sg.Text("Until the separation of MTM from MPO (December 2025) the field of view of PHEBUS is obstructed for scanner positions from \n"+
-                 "2100 to 2850. In addition, PHEBUS can observe when it's out of the parking position, namely for scanner positions from 115 to 3980.\n"+
+                 "2100 to 2850. In addition, PHEBUS can observe when it's out of the parking position, namely for scanner positions from 100 to 3990.\n"+
                  "The baffle of PHEBUS can only be illuminated sideways by the Sun. Direct sunlight must not enter the aperture of the baffle, \n"+
                  "which means that the observation can be done if the Sun is occulted or it's at least 90° away from the line of sight of PHEBUS.")],
         [sg.Column(layout_visual_lcol), sg.VSeparator(), sg.Column(layout_visual_rcol)],
