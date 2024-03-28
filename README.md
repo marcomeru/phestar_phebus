@@ -56,7 +56,7 @@ For any combination of date/time and scanner position, the observation is potent
 
 The conditions i<sub>a</sub>/i<sub>b</sub> are due to the fact that the sunlight can illuminate the baffle of PHEBUS sideways, but the sunlight must never enter the baffle aperture directly.
 
-In addition, until its separation from MPO (December 2025), the MTM module completely obstructs the field of view of PHEBUS for scanner positions between 2100 and 2850. After the separation, that interval of scanner positions will be perfectly viable. Also the positions 0-114 and 3981-4096 are not considered because they correspond to PHEBUS being in parking position, where it can't observe.
+In addition, until its separation from MPO (December 2025), the MTM module completely obstructs the field of view of PHEBUS for scanner positions between 2100 and 2850. After the separation, that interval of scanner positions will be perfectly viable. Also the positions 0-109 and 3991-4096 are not considered because they correspond to PHEBUS being in parking position, where it can't observe.
 
 
 
@@ -65,7 +65,7 @@ The user is required to choose the following parameters:
 - the interesting stars from a catalog. The user is free to select all the stars or only some of them; 
 - the files with the list of kernels that must be loaded for the computation of the orbits. The file is called `bc_plan.tm` and is provided with the freeware [SPICE package](https://s2e2.cosmos.esa.int/bitbucket/projects/SPICE_KERNELS/repos/bepicolombo/browse) in the directory `/bepicolombo/kernels/mk/`. The package for BepiColombo takes up a few gigabytes of memory, so the user is expected to have it stored locally;   
 - the date and time corresponding to the celestial map that the user wants to show. The date/time must be written in the form `YYYY-MM-DDThh:mm:ss`, though the characters `-`, `:` and the `T` can be replaced by any other character. Any date is valid, as long as the SPICE package finds data on the orbit of BepiColombo (since its launch and for the next few years), and it is transformed to ephemeris times (seconds from J2000);
-- the value of the scanner position under which the line of sight of PHEBUS and the projection of the slit on the sky should be plotted. The position can span integers between 115 and 3980;
+- the value of the scanner position under which the line of sight of PHEBUS and the projection of the slit on the sky should be plotted. The position can span integers between 100 and 3990;
 - whether the slit is present ("across", with a field of view of 0.1°x2°) or not ("removed", with field of view of 1.4°x3.1°);
 - whether to show the Sun and the planets (Mercury and its disk, Venus, the Earth) in the plot;   	  
 - the maximum angle, measured radially from the line of sight of PHEBUS, within which to show the name of a star. 
