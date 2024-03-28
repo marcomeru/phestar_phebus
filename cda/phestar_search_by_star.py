@@ -95,7 +95,7 @@ def phestar_search_by_star(kernels_path, starset, time_start, time_end, dt, max_
     
     # Load the spice kernels if necessary
     try :
-        tim = spy.str2et("2025-01-01T20:00:00")
+        _ = spy.str2et("2025-01-01T20:00:00")
     except :
         spy.furnsh(kernels_path)
     
