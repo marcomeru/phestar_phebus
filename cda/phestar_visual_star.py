@@ -98,7 +98,7 @@ def phestar_visual_star(kernels_path, star_data_file, etdate, scannerposs, slitx
     
     # Load the spice kernels if necessary
     try :
-        tim = spy.str2et("2025-01-01T20:00:00")
+        _ = spy.str2et("2025-01-01T20:00:00")
     except :
         spy.furnsh(kernels_path)
     
