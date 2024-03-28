@@ -56,7 +56,7 @@ def sun_in_baffle(time, scanpos, mpo_sun_ecl, mpo_mer_ecl) :
     Parameters
     ----------
     time : (float) ephemeris time of the observation, in seconds past J2000.
-    scanpos : (integer) scanner position of PHEBUS, from 115 to 3980.
+    scanpos : (integer) scanner position of PHEBUS, from 100 to 3990.
     mpo_sun_ecl : (float array) 3-element array representing the vector 
         MPO -> Sun in ecliptic reference frame.
     mpo_mer_ecl : (float array) 3-element array representing the vector 
@@ -69,7 +69,7 @@ def sun_in_baffle(time, scanpos, mpo_sun_ecl, mpo_mer_ecl) :
 
     '''    
     # If PHEBUS is in parking position, there is no problem.
-    if (0 <= scanpos < 115) or (3980 < scanpos <= 4096) :
+    if (0 <= scanpos < 100) or (3990 < scanpos <= 4096) :
         return(0)
     
     # Check the two sufficient conditions: the angle with Z_FOV is greater than
