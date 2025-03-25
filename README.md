@@ -56,7 +56,7 @@ For any combination of date/time and scanner position, the observation is potent
 
 The conditions i<sub>a</sub>/i<sub>b</sub> are due to the fact that the sunlight can illuminate the baffle of PHEBUS sideways, but the sunlight must never enter the baffle aperture directly.
 
-In addition, until its separation from MPO (December 2025), the MTM module completely obstructs the field of view of PHEBUS for scanner positions between 2100 and 2850. After the separation, that interval of scanner positions will be perfectly viable. Also the positions 0-109 and 3991-4096 are not considered because they correspond to PHEBUS being in parking position, where it can't observe.
+In addition, until its separation from MPO (September 2026), the MTM module completely obstructs the field of view of PHEBUS for scanner positions between 2100 and 2850. After the separation, that interval of scanner positions will be perfectly viable. Also the positions 0-109 and 3991-4096 are not considered because they correspond to PHEBUS being in parking position, where it can't observe.
 
 
 
